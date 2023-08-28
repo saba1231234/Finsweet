@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Finsweet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/privacy-policy.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <a class="brand-logo" href="home.html"><img src="resources/images/finsweet-logo.svg" alt="Finsweet Logo"></a>
+        <nav class="nav">
+            <a class="white body-2" href="home.html">Home</a>
+            <a class="body-2" href="about-us.html">About us</a>
+            <a class="body-2" href="features.html">Features</a>
+            <a class="body-2" href="pricing.html">Pricing</a>
+            <a class="body-2" href="">FAQ</a>
+            <a class="body-2" href="blog-page.html">Blog</a>
+            <button class="body-2 contact-button">Contact us</button>
+        </nav>
+        <button class="menu disabled"><i class="fa-solid fa-bars white"></i></button>
+    </header>
+    <main>
+        <h2 class="dark-blue">Privacy Policy</h2>
+        <p class="dark-blue body-2">When you’re ready to go beyond prototyping in Figma, Webflow’s ready to help you bring your</p>
+        <h3 class="dark-blue">Lorem ipsum dolor.</h3>
+        <p class="dark-blue body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <span class="royal-blue">Excepteur sint occaecat</span> cupidatat non proident.</p>
+        <p class="dark-blue body-1">Sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h3 class="dark-blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+        <p class="dark-blue body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat <span class="royal-blue">cupidatat</span> non proident. Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        <ul>
+            <li class="dark-blue body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</li>
+            <li class="dark-blue body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</li>
+            <li class="dark-blue body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</li>
+        </ul>
+        <p class="dark-blue body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+    </main>
+    <footer>
+        <div class="footer-section">
+            <div class="logo-contact-container">
+                <a href="home.html"><img src="resources/images/finsweet-logo.svg" alt="Website Logo"></a>
+                <p class="white label-2">We are always open to discuss your project and improve your online presence.</p>
+                <div class="contact-container">
+                    <p class="label-1">Email me at</p>
+                    <p class="label-1">Call us</p>
+                    <p class="body-1">contact@website.com</p>
+                    <p class="body-1">0927 6277 28525</p>
+                </div>
+            </div>
+            <div class="footer-content">
+                <article>
+                    <h2 class="white">Lets Talk!</h2>
+                    <p class="body-2">We are always open to discuss your project, improve your online presence and help with your UX/UI design challenges.</p>
+                </article>
+                <div class="social-links-container">
+                    <a href=""><img src="resources/images/facebook-logo.svg" alt="Facebook Logo"></a>
+                    <a href=""><img src="resources/images/twitter-logo.svg" alt="Twitter Logo"></a>
+                    <a href=""><img src="resources/images/instagram-logo.svg" alt="Instagram Logo"></a>
+                    <a href=""><img src="resources/images/linked-in-logo.svg" alt="LinkedIn Logo"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div>
+                <p class="body-2">Copyright 2022, Finsweet.com</p>
+                <nav class="footer-nav">
+                    <a class="body-2" href="home.html">Home</a>
+                    <a class="body-2" href="about-us.html">About us</a>
+                    <a class="body-2" href="features.html">Features</a>
+                    <a class="body-2" href="pricing.html">Pricing</a>
+                    <a class="body-2" href="">FAQ</a>
+                    <a class="body-2" href="blog-page.html">Blog</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $(function(){
+            $('.contact-button').click(function(){
+                window.location = 'contact-us.html'
+            })
+            $('.menu').click(function(){
+                if($('.nav').hasClass('menu-active')){
+                    $('.nav').removeClass('menu-active').addClass('menu-disabled')
+                    $('.menu').css({'transform':'translate(0)'})
+                }else{
+                    $('.nav').removeClass('menu-disabled').addClass('menu-active')
+                    $('.menu').css({'transform':`translate(-${$('.nav').css('width')})`})
+                }
+            })
+        })
+    </script>
+</body>
+</html>
